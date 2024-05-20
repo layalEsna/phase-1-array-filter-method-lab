@@ -1,6 +1,6 @@
-require ( './helpers.js' );
+require('./helpers.js');
 
-const sinon = require( 'sinon' )
+const sinon = require('sinon')
 
 describe('index.js', function () {
   describe('findMatching()', function () {
@@ -51,19 +51,24 @@ describe('index.js', function () {
       const drivers = [
         {
           name: 'Bobby',
-          hometown: 'Pittsburgh' },
+          hometown: 'Pittsburgh'
+        },
         {
           name: 'Sammy',
-          hometown: 'New York' } ,
+          hometown: 'New York'
+        },
         {
           name: 'Sally',
-          hometown: 'Cleveland' },
+          hometown: 'Cleveland'
+        },
         {
           name: 'Annette',
-          hometown: 'Los Angeles' },
+          hometown: 'Los Angeles'
+        },
         {
           name: 'Bobby',
-          hometown: 'Tampa Bay' }
+          hometown: 'Tampa Bay'
+        }
       ];
 
       expect(matchName(drivers, 'Bobby')).to.eql([
@@ -79,3 +84,4 @@ describe('index.js', function () {
     });
   });
 });
+
